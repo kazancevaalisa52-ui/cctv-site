@@ -159,6 +159,51 @@
     h2 { font-size: 26px; }
     .hero { padding: 50px 0 60px; }
   }
+  /* FAQ */
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  background: #f7f8fa;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+.faq-item summary {
+  padding: 18px 24px;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 50px;
+  transition: background .2s;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: 400;
+  color: #38bdf8;
+  transition: transform .2s;
+}
+.faq-item[open] summary::after {
+  content: '−';
+}
+.faq-item summary:hover { background: #eef2f7; }
+.faq-item p {
+  padding: 0 24px 20px;
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+}
 </style>
 </head>
 <body>
@@ -229,7 +274,99 @@
     </div>
   </div>
 </section>
-
+<section style="background:#fff;">
+  <div class="container">
+    <h2>Почему <span>мы</span></h2>
+    <div class="services">
+      <div class="card">
+        <h3>✅ Гарантия 2 года</h3>
+        <p>На оборудование и монтаж. Если что-то сломается — приедем и починим бесплатно.</p>
+      </div>
+      <div class="card">
+        <h3>🚀 Выезд в день обращения</h3>
+        <p>Оценим объект бесплатно и сразу назовём точную стоимость. Без скрытых доплат.</p>
+      </div>
+      <div class="card">
+        <h3>📱 Настройка удалённого доступа</h3>
+        <p>Смотрите камеры со смартфона из любой точки мира. Обучим пользоваться.</p>
+      </div>
+      <div class="card">
+        <h3>🔧 Своё оборудование</h3>
+        <p>Работаем с проверенными брендами: бла бла , бла бла, бла бла бла. Подберём под бюджет.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2>Отзывы <span>клиентов</span></h2>
+    <div class="services">
+      <div class="card">
+        <p style="font-style:italic; color:#334155;">«Поставили 4 камеры в частном доме. Приехали в тот же день, всё сделали аккуратно, кабели спрятали. Смотрю с телефона, когда в отъезде. Спасибо!»</p>
+        <p style="margin-top:16px; font-weight:700;">— Андрей, пупкино</p>
+      </div>
+      <div class="card">
+        <p style="font-style:italic; color:#334155;">«Нужно было видеонаблюдение в магазине. Сделали за один вечер, ничего не мешает работе. Отдельное спасибо за настройку — всё понятно показали.»</p>
+        <p style="margin-top:16px; font-weight:700;">— Марина, улица пушкина</p>
+      </div>
+      <div class="card">
+        <p style="font-style:italic; color:#334155;">«Обслуживали старую систему — камеры не работали. Починили, заменили блок питания, теперь всё пишет. Цена адекватная.»</p>
+        <p style="margin-top:16px; font-weight:700;">— Сергей, дом колотушкина</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="background:#fff;">
+  <div class="container">
+    <h2>Частые <span>вопросы</span></h2>
+    <div class="faq">
+      <details class="faq-item">
+        <summary>Сколько стоит установка видеонаблюдения?</summary>
+        <p>Стоимость зависит от количества камер и сложности монтажа. Простой комплект из 2 камер для квартиры — от стокато ₽ под ключ. Для дома из 4 камер — от стокато ₽. Точную цену назовём после бесплатного выезда на объект.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Сколько времени занимает установка?</summary>
+        <p>Стандартный комплект из 2–4 камер устанавливаем за стокато дней. Большие системы (8+ камер) — за стокато дней. Точные сроки скажем после осмотра.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Можно ли смотреть камеры с телефона?</summary>
+        <p>Да, это входит в стоимость. Настроим удалённый доступ через приложение на смартфоне — сможете смотреть камеры из любой точки мира, где есть интернет. Обучим пользоваться.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Что входит в гарантию?</summary>
+        <p>Даём гарантию 2 года на оборудование и монтаж. Если что-то сломается или перестанет работать — приедем и исправим бесплатно. Работаем по договору.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Работаете ли вы зимой?</summary>
+        <p>Да, устанавливаем камеры круглый год. Оборудование рассчитано на работу при -40°C. Зимой работаем аккуратно, чтобы не повредить отделку.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Можно ли подключить камеры к уже существующей системе?</summary>
+        <p>Да, мы обслуживаем и расширяем существующие системы. Приедем, посмотрим, что есть, и предложим оптимальное решение — заменить или добавить камеры.</p>
+      </details>
+    </div>
+  </div>
+</section>
+<section style="background:#f7f8fa;">
+  <div class="container">
+    <h2>Зона <span>работы</span></h2>
+    <p style="text-align:center; color:#475569; margin-bottom:32px; max-width:700px; margin-left:auto; margin-right:auto;">
+      Работаем в пупкино и пупкиной области. Выезд на объект — бесплатно.
+    </p>
+    <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,.08);">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0260e0c28b01968fed635a40619e84c6d7ce912b1e4b08867f13eb806d03c9da&amp;source=constructor" width="1000" height="400" frameborder="0"></iframe>
+    </div>
+  </div>
+</section>
+<section style="background:#38bdf8; color:#0f172a; padding:40px 0;">
+  <div class="container" style="text-align:center;">
+    <h2 style="color:#0f172a; margin-bottom:16px;">Гарантия качества</h2>
+    <p style="font-size:18px; max-width:700px; margin:0 auto; font-weight:500;">
+      Работаем по договору. Даём гарантию 2 года на оборудование и монтаж. 
+      Если что-то пойдёт не так — приедем и исправим бесплатно.
+    </p>
+  </div>
+</section>
 <section class="form-section" id="contact">
   <div class="container">
     <h2>Оставьте <span>заявку</span></h2>
